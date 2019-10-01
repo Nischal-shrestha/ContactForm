@@ -26,7 +26,7 @@
                 <li><a href={{ route('contact') }}>Contact</a></li>
                 <li><a href={{ route('contact.list') }}>Customers List</a></li>
             </ul>
-            <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="fa fa-bars orange-text" aria-hidden="true"></i></a>
+            <a href="#" data-target="mobile-nav" class="sidenav-trigger right"><i class="fa fa-bars orange-text" aria-hidden="true"></i></a>
         </div>
     </nav>
 
