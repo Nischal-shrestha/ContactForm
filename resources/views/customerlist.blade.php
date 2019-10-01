@@ -20,17 +20,47 @@
     <li><a href={{ route('contact') }}>Contact</a></li>
     <li><a href={{ route('contact.list') }}>Customers List</a></li>
 </ul>
+<div class="row container">
 
-<div class="customerlist">
-    
-    @if(count($customers) > 0)
-        <h2>Customers</h2>
-    @else
+    <div class="col s12 customerlist">
+
+        @if(count($customers) > 0)
+        <h2 class="title">Customers List</h2>
+        <table class="responsive-table centered highlight">
+            <thead>
+                <tr>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>Email</th>
+                    <th>Contact</th>
+                    <th>Role</th>
+                    <th>Instution</th>
+                    <th>Comments</th>
+                    <th>Submitted On</th>
+                </tr>
+            </thead>
+            @foreach($customers as $customer)
+            <tr>
+                <td>{{$customer->firstname}}</td>
+                <td>{{$customer->lastname}}</td>
+                <td>{{$customer->email}}</td>
+                <td>{{$customer->contact}}</td>
+                <td>{{$customer->role}}</td>
+                <td>{{$customer->instution}}</td>
+                <td>{{$customer->comments}}</td>
+                <td>{{$customer->created_at}}</td>
+            </tr>
+            @endforeach
+        </table>
+        @else
         <h2>No Customers</h2>
-    @endif
+        @endif
 
+
+    </div>
 
 </div>
+
 @stop
 
 @section('bottom-js')

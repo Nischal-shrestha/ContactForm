@@ -24,7 +24,7 @@
 <div class="contact">
     <div class="row container">
         <div class="col s12">
-            <h2 class="contact-us">Contact Us</h2>
+            <h2 class="title">Contact Us</h2>
         </div>
 
         @if(session()->has('message.status'))
