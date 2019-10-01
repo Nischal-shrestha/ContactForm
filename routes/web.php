@@ -15,6 +15,6 @@ Route::get('/', function () {
     return view('contact');
 })->name('contact');
 
-Route::get('/contactlist',function() {
-    return "Contact List";
-})->name('contact.list');
+Route::post('/','ContactController@store')->name('contact.store');
+
+Route::get('/contactlist','ContactController@customers')->name('contact.list');

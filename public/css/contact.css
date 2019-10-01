@@ -3,7 +3,7 @@ body {
 }
 
 nav.navigation {
-    background-color: #313C54;
+    background-color: #313c54;
 }
 
 .contact {
@@ -22,6 +22,38 @@ nav.navigation {
     width: 100%;
 }
 
-.submit-btn:hover, .submit-btn:focus {
+.message-success,
+.message-error {
+    padding: 20px !important;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.message-success {
+    background-color: #81c784;
+}
+
+.message-error {
+    background-color: #e57373;
+}
+
+.errors {
+    background-color: #e57373;
+    color: white;
+    border-radius: 10px;
+}
+
+.errors > ul > li {
+    display: block;
+    padding: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.submit-btn:hover,
+.submit-btn:focus {
     background-color: #e65100;
 }
